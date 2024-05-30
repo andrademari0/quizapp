@@ -41,7 +41,6 @@ body {
 }
 
 header {
-
     padding: 16px 24px;
     display: flex;
     justify-content: flex-end;
@@ -49,6 +48,9 @@ header {
 
 .tema {
     padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .tema img {
