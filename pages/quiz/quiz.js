@@ -8,3 +8,19 @@ botaoTema.addEventListener("click", () => {
 })
 
 verificarTema(body, botaoTema)
+
+const assunto = localStorage.getItem("assunto")
+
+function alterarAssunto() {
+    const divIcone = document.querySelector(".assunto_ícone")
+    const iconeImg = document.querySelector(".assunto_ícone img")
+    const assuntoTítulo = document.querySelector(".assunto h1")
+
+    divIcone.classList.add(assunto.toLowerCase())
+    iconeImg.setAttribute("src", `../../assets/images/icon-${assunto.toLowerCase()}.svg`)
+    iconeImg.setAttribute("alt", `ícone de ${assunto}`)
+    assuntoTítulo.innerText = assunto
+
+}
+
+alterarAssunto()
