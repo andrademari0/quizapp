@@ -133,12 +133,12 @@ function validarResposta() {
 
 
     if (resposta === quiz.questions[pergunta - 1].answer){
-        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id","correta")
+        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id","correto")
         pontos = pontos + 1
 
     } else{ 
         document.querySelector(`label[for=${idInputResposta}]`).setAttribute("id","errada")
-        document.querySelector(`label[for=${respostaCorretaId}]`).setAttribute("id","correta")
+        document.querySelector(`label[for=${respostaCorretaId}]`).setAttribute("id","correto")
 
     }
 
